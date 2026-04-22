@@ -57,6 +57,19 @@ common on Wi-Fi networks, not indicative of attack.
 | quic.log | QUIC protocol traffic |
 | weird.log | Anomalies flagged by Zeek |
 
+## Wireshark Screenshots
+
+### Protocol Hierarchy
+![Protocol Hierarchy](screenshots/02_protocol_hierarchy.webp)
+
+### IPv4 Conversations
+![IPv4 Conversations](screenshots/03_ipv4_conversations.webp)
+
+### DNS Filter
+![DNS Filter](screenshots/04_dns_filter.webp)
+
+### TLS Traffic
+![TLS Traffic](screenshots/01_wireshark_packet_list.webp)
 ## Methodology
 1. Captured 60 seconds of live traffic using tcpdump on en0
 2. Analyzed pcap with Zeek to generate structured logs
