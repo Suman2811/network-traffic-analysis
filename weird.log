@@ -1,0 +1,19 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	weird
+#open	2026-04-22-20-16-55
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	name	addl	notice	peer	source
+#types	time	string	addr	port	addr	port	string	string	bool	string	string
+1776881704.753343	CRWWdXp9J5MhgLX1i	192.168.0.33	59705	17.248.213.68	443	QUIC_spurious_short_header_packet_threshold_crossed	1	F	zeek	-
+1776881704.895477	CXP6o42JL9oZP61Ol8	192.168.0.33	49300	17.248.172.6	443	QUIC_spurious_short_header_packet_threshold_crossed	1	F	zeek	-
+1776881705.668611	ChUmmg2Pwo2v1B7c55	192.168.0.33	62578	17.248.172.6	443	QUIC_spurious_short_header_packet_threshold_crossed	1	F	zeek	-
+1776881705.668860	C6mCqJ1dkJtQTNtng5	192.168.0.33	62010	17.248.172.6	443	QUIC_spurious_short_header_packet_threshold_crossed	1	F	zeek	-
+1776881705.669137	CsY01V16CUfDkeaPSk	192.168.0.33	63252	17.248.172.6	443	QUIC_spurious_short_header_packet_threshold_crossed	1	F	zeek	-
+1776881706.269809	CO14ag1JoaI9Mdd6Ma	192.168.0.33	61401	17.248.172.6	443	QUIC_spurious_short_header_packet_threshold_crossed	1	F	zeek	-
+1776881711.604708	CMBaoq1kO2F07Mldvd	192.168.0.33	53887	2.16.206.157	443	window_recision	-	F	zeek	-
+1776881712.353665	Ci0ewY22E5AgraU3ac	192.168.0.33	53872	17.248.172.6	443	TCP_seq_underflow_or_misorder	-	F	zeek	TCP
+1776881712.353817	Ci0ewY22E5AgraU3ac	192.168.0.33	53872	17.248.172.6	443	TCP_ack_underflow_or_misorder	-	F	zeek	TCP
+1776881714.332715	CbMMG42cHybx6bTgDi	192.168.0.33	49601	142.251.153.119	443	QUIC_spurious_short_header_packet_threshold_crossed	1	F	zeek	-
+#close	2026-04-22-20-16-56

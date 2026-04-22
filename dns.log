@@ -1,0 +1,56 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	dns
+#open	2026-04-22-20-16-55
+#fields	ts	uid	id.orig_h	id.orig_p	id.resp_h	id.resp_p	proto	trans_id	rtt	query	qclass	qclass_name	qtype	qtype_name	rcode	rcode_name	AA	TC	RD	RA	Z	answers	TTLs	rejected	opcode	opcode_name
+#types	time	string	addr	port	addr	port	enum	count	interval	string	count	string	count	string	count	string	bool	bool	bool	bool	count	vector[string]	vector[interval]	bool	count	string
+1776881705.593462	CBPegy4BK65JcPva5g	192.168.0.33	52257	192.168.0.1	53	udp	14416	0.020268	metrics.icloud.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	metricsedge-continent-wrr.v.aaplimg.com,emea-mask.wrr.me.apple-dns.net,17.248.236.133,17.248.236.23,17.248.236.129,17.248.236.31	78.000000,280.000000,167.000000,167.000000,167.000000,167.000000	F	0	query
+1776881705.593337	CHv3eAKgnXT2Djj91	192.168.0.33	50172	192.168.0.1	53	udp	25786	0.020395	metrics.icloud.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	T	0	metricsedge-continent-wrr.v.aaplimg.com,emea-mask.wrr.me.apple-dns.net	78.000000,280.000000	F	0	query
+1776881705.614622	C6c9Kk2v5mOVhSDNDl	192.168.0.33	57697	192.168.0.1	53	udp	15101	-	emea-mask.wrr.me.apple-dns.net	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	F	0	-	-	F	0	query
+1776881707.824967	CxCrbE2S3g0WcwCJB6	192.168.0.33	49303	192.168.0.1	53	udp	61765	0.018233	mesu.apple.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	T	0	mesu-cdn.apple.com.akadns.net,mesu-cdn.origin-apple.com.akadns.net,mesu.g.aaplimg.com	3353.000000,3353.000000,113.000000	F	0	query
+1776881707.825157	CDKgmj1TCVIHBG5sC6	192.168.0.33	49228	192.168.0.1	53	udp	45438	0.018453	mesu.apple.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	mesu-cdn.apple.com.akadns.net,mesu-cdn.origin-apple.com.akadns.net,mesu.g.aaplimg.com,89.27.228.80	3353.000000,3353.000000,113.000000,154.000000	F	0	query
+1776881707.845040	CyNNTA3OLGeHysTHa	192.168.0.33	57715	192.168.0.1	53	udp	8999	-	mesu.g.aaplimg.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	F	0	-	-	F	0	query
+1776881711.598995	CUjC5U7B8gc2ygNNe	192.168.0.33	58718	192.168.0.1	53	udp	48196	0.014366	gateway.icloud.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	T	0	gateway.fe2.apple-dns.net	20638.000000	F	0	query
+1776881711.599154	C8aZpe4eJzOtqo62Ye	192.168.0.33	56071	192.168.0.1	53	udp	38289	0.025193	gateway.icloud.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	gateway.fe2.apple-dns.net,17.248.209.62,17.248.209.69,17.248.209.73,17.248.209.46,17.248.209.81	20093.000000,76.000000,76.000000,76.000000,76.000000,76.000000	F	0	query
+1776881711.614306	CRDfLm302NxOnbxs71	192.168.0.33	64822	192.168.0.1	53	udp	46988	-	gateway.fe2.apple-dns.net	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	F	0	-	-	F	0	query
+1776881716.632347	CJSJO3302MRakR9LZ6	192.168.0.33	64235	192.168.0.1	53	udp	33721	0.021077	xp.apple.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	T	0	xp.itunes-apple.com.akadns.net,xp-cdn-lb.itunes-apple.com.akadns.net,xp.v.aaplimg.com	681.000000,143.000000,243.000000	F	0	query
+1776881716.632474	CTkhig43vwdGtqu2B5	192.168.0.33	56969	192.168.0.1	53	udp	38881	0.020952	xp.apple.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	xp.itunes-apple.com.akadns.net,xp-cdn-lb.itunes-apple.com.akadns.net,xp.v.aaplimg.com,17.253.15.149,17.253.15.143	590.000000,184.000000,40.000000,178.000000,178.000000	F	0	query
+1776881716.642421	Cf9Ude36Zpis7sCCVj	192.168.0.33	51048	192.168.0.1	53	udp	19376	-	claude.ai	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	F	0	-	-	F	0	query
+1776881716.642538	CppDSr4TtrkIDdGVKc	192.168.0.33	29391	192.168.0.1	53	udp	7650	0.021692	claude.ai	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	160.79.104.10	285.000000	F	0	query
+1776881716.654121	CQ6B5y1j4ZRXbE9q5b	192.168.0.33	56804	192.168.0.1	53	udp	36578	-	xp.v.aaplimg.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	F	0	-	-	F	0	query
+1776881724.153261	CDmbIf1qFFxnJ5S0w2	192.168.0.234	5353	192.168.0.33	5353	udp	0	0.088998	_companion-link._tcp.local	32769	qclass-32769	12	PTR	0	NOERROR	T	F	F	F	0	suman’s macbook pro._companion-link._tcp.local	4500.000000	F	0	query
+1776881730.283663	CgyttC2vyEfO8P89T5	192.168.0.33	58051	192.168.0.1	53	udp	65441	0.019465	configuration.apple.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	T	0	configuration.apple.com.akadns.net,configuration-row-lb.apple.com.akadns.net,configuration.v.aaplimg.com	20399.000000,175.000000,180.000000	F	0	query
+1776881730.283806	CVDvyI1J5yigT068L8	192.168.0.33	57353	192.168.0.1	53	udp	57045	0.029250	configuration.apple.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	configuration.apple.com.akadns.net,configuration-row-lb.apple.com.akadns.net,configuration.v.aaplimg.com,17.253.15.151,17.253.15.148	20108.000000,300.000000,228.000000,113.000000,113.000000	F	0	query
+1776881730.304063	CgoNfs4l4a2LAi3YSh	192.168.0.33	52490	192.168.0.1	53	udp	45274	-	configuration.v.aaplimg.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	F	0	-	-	F	0	query
+1776881730.423322	COs1rz3GbiiEFW1gn5	192.168.0.33	50653	192.168.0.1	53	udp	41823	0.019275	swscan-cdn.apple.com.akadns.net	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	T	0	swdist.apple.com.edgekey.net,e5977.dsce9.akamaiedge.net	162.000000,152.000000	F	0	query
+1776881730.423503	CRluqBOB1yBxPdbwj	192.168.0.33	55302	192.168.0.1	53	udp	64707	0.039497	swscan-cdn.apple.com.akadns.net	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	swdist.apple.com.edgekey.net,e5977.dsce9.akamaiedge.net,23.58.105.13	1800.000000,191.000000,300.000000	F	0	query
+1776881731.290480	C2E6XH2Y2oGmEAQq3i	192.168.0.33	54348	192.168.0.1	53	udp	45887	0.022575	swdist.apple.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	T	0	swdist.g.aaplimg.com	2180.000000	F	0	query
+1776881731.290788	CXZn8o4hDBN23mub8e	192.168.0.33	57512	192.168.0.1	53	udp	34925	0.022269	swdist.apple.com	1	C_INTERNET	1	A	0	NOERROR	F	F	T	T	0	swdist.g.aaplimg.com,17.253.15.137,17.253.15.139,17.253.15.153,17.253.15.149	2180.000000,273.000000,273.000000,273.000000,273.000000	F	0	query
+1776881731.313936	CX04wk3Z7h3XYD9ijf	192.168.0.33	58807	192.168.0.1	53	udp	10205	-	swdist.g.aaplimg.com	1	C_INTERNET	65	HTTPS	0	NOERROR	F	F	T	F	0	-	-	F	0	query
+1776881736.543186	CcH2VK3Eagi9xdG0Ti	192.168.0.1	47356	192.168.0.33	137	udp	12671	-	*	1	C_INTERNET	33	NBSTAT	0	NOERROR	F	F	F	F	0	-	-	F	0	netbios-query
+1776881724.206386	CvTlPf8NQzoSGlXn5	fe80::807:934f:38e7:f402	5353	ff02::fb	5353	udp	0	-	_rdlink._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881724.513916	CvTlPf8NQzoSGlXn5	fe80::807:934f:38e7:f402	5353	ff02::fb	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881725.230604	CvTlPf8NQzoSGlXn5	fe80::807:934f:38e7:f402	5353	ff02::fb	5353	udp	0	-	_rdlink._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881728.199977	CvTlPf8NQzoSGlXn5	fe80::807:934f:38e7:f402	5353	ff02::fb	5353	udp	0	-	_rdlink._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881724.206383	C8HUGa3GbsnLjHOHSc	192.168.0.234	5353	224.0.0.251	5353	udp	0	-	_rdlink._tcp.local	32769	qclass-32769	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881724.513912	C8HUGa3GbsnLjHOHSc	192.168.0.234	5353	224.0.0.251	5353	udp	0	-	_companion-link._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881725.230598	C8HUGa3GbsnLjHOHSc	192.168.0.234	5353	224.0.0.251	5353	udp	0	-	_rdlink._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881728.199976	C8HUGa3GbsnLjHOHSc	192.168.0.234	5353	224.0.0.251	5353	udp	0	-	_rdlink._tcp.local	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881736.596916	CKjpWH1Xe2k8Gn3Cbi	192.168.0.1	58594	224.0.0.251	5353	udp	8061	-	64.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881736.596918	CSfuYG1e6WawRS1R4e	192.168.0.1	44340	224.0.0.251	5353	udp	8062	-	64.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	F	F	0	-	-	F	0	query
+1776881705.593130	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881706.602056	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881708.697637	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881712.716686	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881717.774636	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881718.784347	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881720.826341	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881725.000827	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881731.447504	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881732.483241	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881734.486894	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881738.638916	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+1776881747.001431	Cazoe64t7Q6XwzhBNh	192.168.0.33	52565	192.168.0.1	53	udp	15003	-	lb._dns-sd._udp.0.0.168.192.in-addr.arpa	1	C_INTERNET	12	PTR	-	-	F	F	T	F	0	-	-	F	0	query
+#close	2026-04-22-20-16-56

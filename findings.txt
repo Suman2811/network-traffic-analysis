@@ -1,0 +1,107 @@
+=== Network Traffic Analysis Report ===
+
+Analyst: Suman
+Date: 22 April 2025
+Tool: tcpdump + Zeek 
+Interface: en0 (Wi-Fi)
+Capture duration: 60 seconds
+Total packets captured: 8072
+Packets dropped: 0 (clean capture)
+Total connections analysed: 182
+
+================================================
+SECTION 1 — TOP EXTERNAL IPs CONTACTED
+================================================
+
+IP              Count   Owner
+17.248.172.6    18      Apple Inc
+17.250.81.132   8       Apple Inc
+17.111.103.20   8       Apple Inc
+17.248.213.67   7       Apple Inc
+17.248.213.68   6       Apple Inc
+160.79.104.10   5       Fastly CDN
+146.75.123.6    5       Fastly CDN
+
+Finding: All external IPs belong to Apple Inc or Fastly CDN.
+No connections to unknown or suspicious IPs detected.
+
+================================================
+SECTION 2 — DNS ANALYSIS
+================================================
+
+Top queries:
+- lb._dns-sd._udp (x13) — local network service discovery (mDNS)
+- _rdlink._tcp.local (x6) — Apple device linking protocol
+- xp.apple.com (x2) — Apple telemetry/experience
+- metrics.icloud.com (x2) — iCloud metrics
+- gateway.icloud.com (x2) — iCloud gateway
+
+Finding: No suspicious domains detected. No long/random
+domain names that would indicate DNS tunneling.
+All queries resolve to known Apple/iCloud infrastructure.
+
+================================================
+SECTION 3 — TLS/HTTPS ANALYSIS
+================================================
+
+Top HTTPS destinations:
+- gateway.icloud.com (x21)
+- metrics.icloud.com (x11)
+- mask.icloud.com (x11)
+- xp.apple.com (x8)
+- p130-caldav.icloud.com (x8)
+
+TLS versions observed:
+- TLS 1.3: 106 connections (100%)
+- TLS 1.2: 0
+- TLS 1.1: 0 (deprecated)
+- TLS 1.0: 0 (deprecated)
+
+Finding: POSITIVE — All encrypted traffic uses TLS 1.3,
+the most current and secure protocol version.
+No legacy or insecure TLS versions detected.
+
+================================================
+SECTION 4 — ANOMALIES (weird.log)
+================================================
+
+1. QUIC_spurious_short_header_packet_threshold_crossed (x7)
+   Explanation: QUIC protocol anomaly — likely background
+   browser or app using Google QUIC. Low severity.
+
+2. window_recision (x1)
+   Explanation: TCP window size reduced mid-connection.
+   Common on busy networks. Not a threat.
+
+3. TCP_seq_underflow_or_misorder (x1)
+   Explanation: Out-of-order TCP packet. Common on Wi-Fi.
+   Not a threat.
+
+4. TCP_ack_underflow_or_misorder (x1)
+   Explanation: Minor TCP acknowledgement anomaly.
+   Not a threat.
+
+================================================
+SECTION 5 — SUMMARY & CONCLUSIONS
+================================================
+
+No malicious activity detected in this capture.
+
+Key positives:
++ All 106 encrypted connections use TLS 1.3
++ No connections to unknown or blacklisted IPs
++ No DNS tunneling patterns detected
++ 0 packets dropped (high quality capture)
+
+Observations:
+- Host machine is generating significant iCloud background
+  traffic (sync, calendar, metrics) even when idle
+- QUIC protocol detected, likely from browser background tabs
+- Local mDNS discovery active (normal for macOS)
+
+Recommended next steps:
+- Capture during active browsing for richer HTTP/DNS data
+- Run Suricata IDS on same pcap for rule-based detection
+- Compare against a capture from a different network
+
+================================================
